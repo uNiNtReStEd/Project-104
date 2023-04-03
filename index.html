@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Recognition Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+
+   <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  </head>
+  <body>
+    <center>
+    
+    <div class="container">
+      <h1 class="text-center mb-5">Image Recognition Website</h1>
+      <div class="row">
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item active">Family Members</li>
+            <li class="list-group-item">Son</li>
+            <li class="list-group-item">Mom</li>
+            <li class="list-group-item">Grandmother</li>
+          </ul>
+        </div>
+        </div>
+        </div>
+
+        
+
+        <label>Webcam View</label>
+
+      <div id="camera"></div>
+
+      <br><br>
+      <label id="preview_text">Preview</label>
+
+      <br>
+
+      <div id="result"></div>
+
+      <br><br>
+
+      <button id="capture_image" class="btn btn-primary" onclick="capture()">Capture Image</button>
+
+      <br><br>
+
+      <button id="identify_button" class="btn btn-success" onclick="identify()">Identify Image</button>
+
+      <br><br>
+
+      <p style="font-size: 22px">Object : <span id="object_name"></span> </p>
+      <p style="font-size: 22px">Accuracy : <span id="object_accuracy"></span> </p>
+
+      
+      
+  </center>
+  
+    </body>
+
+    <!-- Main JavaScript file -->
+    <script src="main.js"></script>
+  </body>
+</html>
